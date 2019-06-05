@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cclearpro - Clearing", "Cclearpro - Clearing\Cclearpro - Clearing.csproj", "{57ED7F5A-1A20-47CF-86C8-B4F64AFB3400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57ED7F5A-1A20-47CF-86C8-B4F64AFB3400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57ED7F5A-1A20-47CF-86C8-B4F64AFB3400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57ED7F5A-1A20-47CF-86C8-B4F64AFB3400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57ED7F5A-1A20-47CF-86C8-B4F64AFB3400}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6F970D1-65B4-45DC-B9CE-B25A065BB608}
+	EndGlobalSection
+EndGlobal
