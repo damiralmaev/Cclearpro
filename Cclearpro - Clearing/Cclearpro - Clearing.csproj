@@ -7,7 +7,7 @@
     <ProjectGuid>{57ED7F5A-1A20-47CF-86C8-B4F64AFB3400}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Cclearpro___Clearing</RootNamespace>
-    <AssemblyName>Cclearpro - Clearing</AssemblyName>
+    <AssemblyName>Cclearpro</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Cclearpromini.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -82,6 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cclearpromini.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

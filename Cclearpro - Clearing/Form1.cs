@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Windows.Forms;
+
 //что я добавил
 
 using System.IO;//для очистки
-using System.Windows.Forms;
+using System.Diagnostics;//для процессов
 
 namespace Cclearpro___Clearing
 {
@@ -49,6 +51,20 @@ namespace Cclearpro___Clearing
 
                     }
                 }
+
+                string[] filess = Directory.GetDirectories(@"C:\Windows\Temp");
+
+                foreach (string name in filess)
+                {
+                    try
+                    {
+                        Directory.Delete(name);
+                    }
+                    catch
+                    {
+
+                    }
+                }
             }
 
             if (checkDown.Checked == true)
@@ -60,6 +76,20 @@ namespace Cclearpro___Clearing
                     try
                     {
                         File.Delete(name);
+                    }
+                    catch
+                    {
+
+                    }
+                }
+
+                string[] filesss = Directory.GetDirectories($"C:\\Users\\{Environment.UserName}\\Downloads");
+
+                foreach (string name in filesss)
+                {
+                    try
+                    {
+                        Directory.Delete(name);
                     }
                     catch
                     {
@@ -83,6 +113,20 @@ namespace Cclearpro___Clearing
 
                     }
                 }
+
+                string[] filessss = Directory.GetDirectories($"C:\\Users\\{Environment.UserName}\\AppData\\Local\\Temp");
+
+                foreach (string name in filessss)
+                {
+                    try
+                    {
+                        Directory.Delete(name);
+                    }
+                    catch
+                    {
+
+                    }
+                }
             }
 
             if (checkChomre.Checked == true)
@@ -95,6 +139,21 @@ namespace Cclearpro___Clearing
                     foreach (string name in filessss)
                     {
                         File.Delete(name);
+                    }
+                }
+                catch
+                {
+
+                }
+
+                try
+                {
+
+                    string[] filessss = Directory.GetDirectories($"C:\\Users\\{Environment.UserName}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cache");
+
+                    foreach (string name in filessss)
+                    {
+                        Directory.Delete(name);
                     }
                 }
                 catch
@@ -165,6 +224,69 @@ namespace Cclearpro___Clearing
             {
                 label4.Text = ($"Нет браузера");
             }
+        }
+
+
+        //нажата ли кнопка
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            //обновление
+
+            if (e.KeyCode == Keys.F5)
+                bates();
+
+            //информация
+
+            if (e.KeyCode == Keys.F1)
+                MessageBox.Show("Автор программы: Дамир Алмаев Маратович. Версия программа 1.1", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        //верния меню
+
+        private void ОПрограммеИАвторахToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Автор программы: Дамир Алмаев Маратович. Версия программа 1.1", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ПолнаяОчисткаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            checkChomre.Checked = true;
+            checkTemp.Checked = true;
+            checkDown.Checked = true;
+            checkAppData.Checked = true;
+            btstart.PerformClick();
+        }
+
+        private void ОбновитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bates();
+        }
+
+        private void УбратьВсеГалочкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            checkChomre.Checked = false;
+            checkTemp.Checked = false;
+            checkDown.Checked = false;
+            checkAppData.Checked = false;
+        }
+
+        private void ЧтоДелаетКнопкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("F1 - обновить вес всех компонетах. F5 - Информация", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void НашСайтToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://damiralmaev.github.io/");
+        }
+
+        private void ПолнаяОчисткатолькоСтавитГалочкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            checkChomre.Checked = true;
+            checkTemp.Checked = true;
+            checkDown.Checked = true;
+            checkAppData.Checked = true;
         }
     }
 }
