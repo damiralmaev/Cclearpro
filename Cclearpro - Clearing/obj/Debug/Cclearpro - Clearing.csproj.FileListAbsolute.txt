@@ -8,3 +8,13 @@ C:\Users\Дамир\source\repos\Cclearpro - Clearing\Cclearpro - Clearing\bin\D
 C:\Users\Дамир\source\repos\Cclearpro - Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.pdb
 C:\Users\Дамир\source\repos\Cclearpro - Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.exe
 C:\Users\Дамир\source\repos\Cclearpro - Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.pdb
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.exe.config
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.exe
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.pdb
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro - Clearing.csprojAssemblyReference.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro___Clearing.Form1.resources
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro___Clearing.Properties.Resources.resources
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro - Clearing.csproj.GenerateResource.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro - Clearing.csproj.CoreCompileInputs.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.exe
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.pdb

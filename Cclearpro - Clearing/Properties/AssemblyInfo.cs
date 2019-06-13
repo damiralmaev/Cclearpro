@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Новая программа для очистки системы (Есть COM)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Скачать на github.com")]
-[assembly: AssemblyProduct("Cclearpro - Clearing")]
+[assembly: AssemblyProduct("Cclearpro")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("Нет :(")]
 [assembly: AssemblyCulture("")]
@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1")]
-[assembly: AssemblyFileVersion("1.1")]
+[assembly: AssemblyVersion("1.2")]
+[assembly: AssemblyFileVersion("1.2")]
 [assembly: NeutralResourcesLanguage("ru")]
 

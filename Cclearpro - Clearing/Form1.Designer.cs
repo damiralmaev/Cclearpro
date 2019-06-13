@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.checkTemp = new System.Windows.Forms.CheckBox();
             this.checkDown = new System.Windows.Forms.CheckBox();
             this.checkAppData = new System.Windows.Forms.CheckBox();
@@ -40,14 +41,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.оПрограммеИАвторахToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.обновитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.полнаяОчисткаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.обновитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.прочееФункцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.убратьВсеГалочкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.чтоДелаетКнопкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.нашСайтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.открытьСистемныеУтилитыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редакторРеестраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.диспечерЗадачToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.команднаяСтрокаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,13 +174,6 @@
             this.оПрограммеИАвторахToolStripMenuItem.Text = "О программе и авторах";
             this.оПрограммеИАвторахToolStripMenuItem.Click += new System.EventHandler(this.ОПрограммеИАвторахToolStripMenuItem_Click);
             // 
-            // обновитьToolStripMenuItem
-            // 
-            this.обновитьToolStripMenuItem.Name = "обновитьToolStripMenuItem";
-            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
-            this.обновитьToolStripMenuItem.Text = "Обновить";
-            this.обновитьToolStripMenuItem.Click += new System.EventHandler(this.ОбновитьToolStripMenuItem_Click);
-            // 
             // полнаяОчисткаToolStripMenuItem
             // 
             this.полнаяОчисткаToolStripMenuItem.Name = "полнаяОчисткаToolStripMenuItem";
@@ -183,24 +181,24 @@
             this.полнаяОчисткаToolStripMenuItem.Text = "Полная очистка";
             this.полнаяОчисткаToolStripMenuItem.Click += new System.EventHandler(this.ПолнаяОчисткаToolStripMenuItem_Click);
             // 
+            // обновитьToolStripMenuItem
+            // 
+            this.обновитьToolStripMenuItem.Name = "обновитьToolStripMenuItem";
+            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.обновитьToolStripMenuItem.Text = "Обновить";
+            this.обновитьToolStripMenuItem.Click += new System.EventHandler(this.ОбновитьToolStripMenuItem_Click);
+            // 
             // прочееФункцииToolStripMenuItem
             // 
             this.прочееФункцииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.убратьВсеГалочкиToolStripMenuItem,
             this.чтоДелаетКнопкиToolStripMenuItem,
             this.нашСайтToolStripMenuItem,
-            this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem});
+            this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem,
+            this.открытьСистемныеУтилитыToolStripMenuItem});
             this.прочееФункцииToolStripMenuItem.Name = "прочееФункцииToolStripMenuItem";
             this.прочееФункцииToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.прочееФункцииToolStripMenuItem.Text = "Прочее функции";
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.AutoPopDelay = 999999999;
-            this.toolTip1.InitialDelay = 500;
-            this.toolTip1.ReshowDelay = 100;
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Информация";
             // 
             // убратьВсеГалочкиToolStripMenuItem
             // 
@@ -230,6 +228,45 @@
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem.Text = "Полная очистка (только ставит галочки)";
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem.Click += new System.EventHandler(this.ПолнаяОчисткатолькоСтавитГалочкиToolStripMenuItem_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 999999999;
+            this.toolTip1.InitialDelay = 500;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Информация";
+            // 
+            // открытьСистемныеУтилитыToolStripMenuItem
+            // 
+            this.открытьСистемныеУтилитыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.редакторРеестраToolStripMenuItem,
+            this.диспечерЗадачToolStripMenuItem,
+            this.команднаяСтрокаToolStripMenuItem});
+            this.открытьСистемныеУтилитыToolStripMenuItem.Name = "открытьСистемныеУтилитыToolStripMenuItem";
+            this.открытьСистемныеУтилитыToolStripMenuItem.Size = new System.Drawing.Size(371, 26);
+            this.открытьСистемныеУтилитыToolStripMenuItem.Text = "Открыть системные утилиты";
+            // 
+            // редакторРеестраToolStripMenuItem
+            // 
+            this.редакторРеестраToolStripMenuItem.Name = "редакторРеестраToolStripMenuItem";
+            this.редакторРеестраToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.редакторРеестраToolStripMenuItem.Text = "Редактор реестра";
+            this.редакторРеестраToolStripMenuItem.Click += new System.EventHandler(this.РедакторРеестраToolStripMenuItem_Click);
+            // 
+            // диспечерЗадачToolStripMenuItem
+            // 
+            this.диспечерЗадачToolStripMenuItem.Name = "диспечерЗадачToolStripMenuItem";
+            this.диспечерЗадачToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.диспечерЗадачToolStripMenuItem.Text = "Диспечер задач";
+            this.диспечерЗадачToolStripMenuItem.Click += new System.EventHandler(this.ДиспечерЗадачToolStripMenuItem_Click);
+            // 
+            // команднаяСтрокаToolStripMenuItem
+            // 
+            this.команднаяСтрокаToolStripMenuItem.Name = "команднаяСтрокаToolStripMenuItem";
+            this.команднаяСтрокаToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.команднаяСтрокаToolStripMenuItem.Text = "Командная строка";
+            this.команднаяСтрокаToolStripMenuItem.Click += new System.EventHandler(this.КоманднаяСтрокаToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,10 +284,11 @@
             this.Controls.Add(this.checkTemp);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Cclearpro - Clearing";
+            this.Text = "Cclearpro";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.menuStrip1.ResumeLayout(false);
@@ -281,6 +319,10 @@
         private System.Windows.Forms.ToolStripMenuItem чтоДелаетКнопкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem нашСайтToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem открытьСистемныеУтилитыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem редакторРеестраToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem диспечерЗадачToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem команднаяСтрокаToolStripMenuItem;
     }
 }
 

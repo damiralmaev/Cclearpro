@@ -5,6 +5,7 @@ using System.Windows.Forms;
 
 using System.IO;//для очистки
 using System.Diagnostics;//для процессов
+using System.Threading.Tasks;
 
 namespace Cclearpro___Clearing
 {
@@ -34,118 +35,141 @@ namespace Cclearpro___Clearing
 
         //начать очистку
 
-        private void Btstart_Click(object sender, EventArgs e)
+        private async void Btstart_Click(object sender, EventArgs e)
         {
             if (checkTemp.Checked == true)
             {
                 string[] files = Directory.GetFiles(@"C:\Windows\Temp");
 
-                foreach (string name in files)
+                await Task.Run(() =>
                 {
-                    try
+                    foreach (string name in files)
                     {
-                        File.Delete(name);
-                    }
-                    catch
-                    {
+                        try
+                        {
+                            File.Delete(name);
+                        }
+                        catch
+                        {
 
+                        }
                     }
-                }
+                });
+
+                await Task.Run(() =>
+                { });
 
                 string[] filess = Directory.GetDirectories(@"C:\Windows\Temp");
 
-                foreach (string name in filess)
+                await Task.Run(() =>
                 {
-                    try
+                    foreach (string name in filess)
                     {
-                        Directory.Delete(name);
-                    }
-                    catch
-                    {
+                        try
+                        {
+                            Directory.Delete(name);
+                        }
+                        catch
+                        {
 
+                        }
                     }
-                }
+                });
             }
 
             if (checkDown.Checked == true)
             {
                 string[] filess = Directory.GetFiles($"C:\\Users\\{Environment.UserName}\\Downloads");
 
-                foreach (string name in filess)
+                await Task.Run(() =>
                 {
-                    try
+                    foreach (string name in filess)
                     {
-                        File.Delete(name);
-                    }
-                    catch
-                    {
+                        try
+                        {
+                            File.Delete(name);
+                        }
+                        catch
+                        {
 
+                        }
                     }
-                }
+                });
 
                 string[] filesss = Directory.GetDirectories($"C:\\Users\\{Environment.UserName}\\Downloads");
 
-                foreach (string name in filesss)
+                await Task.Run(() =>
                 {
-                    try
+                    foreach (string name in filesss)
                     {
-                        Directory.Delete(name);
-                    }
-                    catch
-                    {
+                        try
+                        {
+                            Directory.Delete(name);
+                        }
+                        catch
+                        {
 
+                        }
                     }
-                }
+                });
             }
 
             if (checkAppData.Checked == true)
             {
                 string[] filesss = Directory.GetFiles($"C:\\Users\\{Environment.UserName}\\AppData\\Local\\Temp");
 
-                foreach (string name in filesss)
+                await Task.Run(() =>
                 {
-                    try
+                    foreach (string name in filesss)
                     {
-                        File.Delete(name);
-                    }
-                    catch
-                    {
+                        try
+                        {
+                            File.Delete(name);
+                        }
+                        catch
+                        {
 
+                        }
                     }
-                }
+                });
 
                 string[] filessss = Directory.GetDirectories($"C:\\Users\\{Environment.UserName}\\AppData\\Local\\Temp");
 
-                foreach (string name in filessss)
+                await Task.Run(() =>
                 {
-                    try
+                    foreach (string name in filessss)
                     {
-                        Directory.Delete(name);
-                    }
-                    catch
-                    {
+                        try
+                        {
+                            Directory.Delete(name);
+                        }
+                        catch
+                        {
 
+                        }
                     }
-                }
+                });
             }
 
             if (checkChomre.Checked == true)
             {
-                try
+                await Task.Run(() =>
                 {
-
-                    string[] filessss = Directory.GetFiles($"C:\\Users\\{Environment.UserName}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cache");
-
-                    foreach (string name in filessss)
+                    try
                     {
-                        File.Delete(name);
+
+                        string[] filessss = Directory.GetFiles($"C:\\Users\\{Environment.UserName}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cache");
+
+                        foreach (string name in filessss)
+                        {
+                            File.Delete(name);
+                        }
                     }
-                }
-                catch
-                {
+                    catch
+                    {
 
-                }
-
+                    }
+                });
                 try
                 {
 
@@ -182,10 +206,10 @@ namespace Cclearpro___Clearing
             foreach (string name in files)
             {
                 FileInfo f = new FileInfo(name);
-                temp = temp + f.Length;
+                temp = (temp + f.Length);
             }
 
-            label1.Text = ($"Всего весит {temp} байт");
+            label1.Text = ($"Всего весит {temp / 1024} байт");
 
             string[] filess = Directory.GetFiles($"C:\\Users\\{Environment.UserName}\\Downloads");
 
@@ -240,6 +264,51 @@ namespace Cclearpro___Clearing
 
             if (e.KeyCode == Keys.F1)
                 MessageBox.Show("Автор программы: Дамир Алмаев Маратович. Версия программа 1.1", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //Полная очистка
+
+            if (e.KeyCode == Keys.F2)
+            {
+                checkChomre.Checked = true;
+                checkTemp.Checked = true;
+                checkDown.Checked = true;
+                checkAppData.Checked = true;
+                btstart.PerformClick();
+            }
+
+            //убрать все галочки
+
+            if (e.KeyCode == Keys.F3)
+            {
+                checkChomre.Checked = false;
+                checkTemp.Checked = false;
+                checkDown.Checked = false;
+                checkAppData.Checked = false;
+            }
+
+            //ставит все галочки
+
+            if (e.KeyCode == Keys.F4)
+            {
+                checkChomre.Checked = true;
+                checkTemp.Checked = true;
+                checkDown.Checked = true;
+                checkAppData.Checked = true;
+            }
+
+            //наш сайт
+
+            if (e.KeyCode == Keys.F6)
+            {
+                Process.Start("https://damiralmaev.github.io/");
+            }
+
+            //что делает кнопка? (это бесполезно)
+
+            if (e.KeyCode == Keys.F7)
+            {
+                MessageBox.Show("ГОРЯЧИЕ КЛАВИШЫ. F1 - Обновить вес всех компонетах. F2 - Полная очистка. F3 - Убрать все галочки. F4 - Ставит все галочки. F5 - Информация. F6 - Открыть наш сайт. F7 - Что делает это кнопка?", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         //верния меню
@@ -273,7 +342,7 @@ namespace Cclearpro___Clearing
 
         private void ЧтоДелаетКнопкиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("F1 - обновить вес всех компонетах. F5 - Информация", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("ГОРЯЧИЕ КЛАВИШЫ. F1 - Обновить вес всех компонетах. F2 - Полная очистка. F3 - Убрать все галочки. F4 - Ставит все галочки. F5 - Информация. F6 - Открыть наш сайт. F7 - Что делает это кнопка?", "Cclearpro", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void НашСайтToolStripMenuItem_Click(object sender, EventArgs e)
@@ -287,6 +356,29 @@ namespace Cclearpro___Clearing
             checkTemp.Checked = true;
             checkDown.Checked = true;
             checkAppData.Checked = true;
+        }
+
+        //системные утилиты
+
+        //редактор реестра
+
+        private void РедакторРеестраToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("regedit");
+        }
+
+        //Диспечер задач
+
+        private void ДиспечерЗадачToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("taskmgr");
+        }
+
+        //Командная строка
+
+        private void КоманднаяСтрокаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd");
         }
     }
 }
