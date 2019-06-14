@@ -48,11 +48,14 @@
             this.чтоДелаетКнопкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.нашСайтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.открытьСистемныеУтилитыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редакторРеестраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.диспечерЗадачToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.команднаяСтрокаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.обновлениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.чтоДелатьЕслиОшибкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +70,7 @@
             this.checkTemp.Text = "Очистки папки Temp";
             this.toolTip1.SetToolTip(this.checkTemp, "Это папка задержит временные файлы.");
             this.checkTemp.UseVisualStyleBackColor = true;
+            this.checkTemp.CheckedChanged += new System.EventHandler(this.CheckTemp_CheckedChanged);
             // 
             // checkDown
             // 
@@ -109,7 +113,7 @@
             // 
             // btstart
             // 
-            this.btstart.Location = new System.Drawing.Point(-9, 441);
+            this.btstart.Location = new System.Drawing.Point(-4, 526);
             this.btstart.Name = "btstart";
             this.btstart.Size = new System.Drawing.Size(607, 67);
             this.btstart.TabIndex = 6;
@@ -195,7 +199,9 @@
             this.чтоДелаетКнопкиToolStripMenuItem,
             this.нашСайтToolStripMenuItem,
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem,
-            this.открытьСистемныеУтилитыToolStripMenuItem});
+            this.открытьСистемныеУтилитыToolStripMenuItem,
+            this.обновлениеToolStripMenuItem,
+            this.чтоДелатьЕслиОшибкаToolStripMenuItem});
             this.прочееФункцииToolStripMenuItem.Name = "прочееФункцииToolStripMenuItem";
             this.прочееФункцииToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.прочееФункцииToolStripMenuItem.Text = "Прочее функции";
@@ -228,14 +234,6 @@
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem.Text = "Полная очистка (только ставит галочки)";
             this.полнаяОчисткатолькоСтавитГалочкиToolStripMenuItem.Click += new System.EventHandler(this.ПолнаяОчисткатолькоСтавитГалочкиToolStripMenuItem_Click);
             // 
-            // toolTip1
-            // 
-            this.toolTip1.AutoPopDelay = 999999999;
-            this.toolTip1.InitialDelay = 500;
-            this.toolTip1.ReshowDelay = 100;
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Информация";
-            // 
             // открытьСистемныеУтилитыToolStripMenuItem
             // 
             this.открытьСистемныеУтилитыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -249,30 +247,62 @@
             // редакторРеестраToolStripMenuItem
             // 
             this.редакторРеестраToolStripMenuItem.Name = "редакторРеестраToolStripMenuItem";
-            this.редакторРеестраToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.редакторРеестраToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.редакторРеестраToolStripMenuItem.Text = "Редактор реестра";
             this.редакторРеестраToolStripMenuItem.Click += new System.EventHandler(this.РедакторРеестраToolStripMenuItem_Click);
             // 
             // диспечерЗадачToolStripMenuItem
             // 
             this.диспечерЗадачToolStripMenuItem.Name = "диспечерЗадачToolStripMenuItem";
-            this.диспечерЗадачToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.диспечерЗадачToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.диспечерЗадачToolStripMenuItem.Text = "Диспечер задач";
             this.диспечерЗадачToolStripMenuItem.Click += new System.EventHandler(this.ДиспечерЗадачToolStripMenuItem_Click);
             // 
             // команднаяСтрокаToolStripMenuItem
             // 
             this.команднаяСтрокаToolStripMenuItem.Name = "команднаяСтрокаToolStripMenuItem";
-            this.команднаяСтрокаToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.команднаяСтрокаToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.команднаяСтрокаToolStripMenuItem.Text = "Командная строка";
             this.команднаяСтрокаToolStripMenuItem.Click += new System.EventHandler(this.КоманднаяСтрокаToolStripMenuItem_Click);
+            // 
+            // обновлениеToolStripMenuItem
+            // 
+            this.обновлениеToolStripMenuItem.Name = "обновлениеToolStripMenuItem";
+            this.обновлениеToolStripMenuItem.Size = new System.Drawing.Size(371, 26);
+            this.обновлениеToolStripMenuItem.Text = "Обновление программы";
+            this.обновлениеToolStripMenuItem.Click += new System.EventHandler(this.ОбновлениеToolStripMenuItem_Click);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 999999999;
+            this.toolTip1.InitialDelay = 500;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Информация";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(-4, 419);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(604, 116);
+            this.listBox1.TabIndex = 12;
+            // 
+            // чтоДелатьЕслиОшибкаToolStripMenuItem
+            // 
+            this.чтоДелатьЕслиОшибкаToolStripMenuItem.Name = "чтоДелатьЕслиОшибкаToolStripMenuItem";
+            this.чтоДелатьЕслиОшибкаToolStripMenuItem.Size = new System.Drawing.Size(371, 26);
+            this.чтоДелатьЕслиОшибкаToolStripMenuItem.Text = "Что делать если есть ошибка?";
+            this.чтоДелатьЕслиОшибкаToolStripMenuItem.Click += new System.EventHandler(this.ЧтоДелатьЕслиОшибкаToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(597, 506);
+            this.ClientSize = new System.Drawing.Size(597, 591);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -323,6 +353,9 @@
         private System.Windows.Forms.ToolStripMenuItem редакторРеестраToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem диспечерЗадачToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem команднаяСтрокаToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ToolStripMenuItem обновлениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem чтоДелатьЕслиОшибкаToolStripMenuItem;
     }
 }
 
