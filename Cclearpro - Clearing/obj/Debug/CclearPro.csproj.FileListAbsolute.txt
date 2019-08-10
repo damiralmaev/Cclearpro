@@ -1,0 +1,48 @@
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\bin\Debug\CclearPro.exe.config
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\bin\Debug\CclearPro.exe
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\bin\Debug\CclearPro.pdb
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.csprojAssemblyReference.cache
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\MainWindow.g.cs
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\App.g.cs
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro_MarkupCompile.cache
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro_MarkupCompile.lref
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\MainWindow.baml
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.g.resources
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.Properties.Resources.resources
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.csproj.GenerateResource.cache
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.csproj.CoreCompileInputs.cache
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.exe
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.pdb
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\Avtor.g.cs
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\Avtor.baml
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\ytilites.g.cs
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\ytilites.baml
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\dispitherchatach.g.cs
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\dispitherchatach.baml
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\bin\Debug\ProcessKiller.dll
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\bin\Debug\ProcessKiller.pdb
+C:\Users\Дамир Хакер\source\repos\CclearPro\CclearPro\obj\Debug\CclearPro.csproj.CopyComplete
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.exe.config
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.exe
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\Cclearpro.pdb
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\ProcessKiller.dll
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\bin\Debug\ProcessKiller.pdb
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\CclearPro.csprojAssemblyReference.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Avtor.g.cs
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\dispitherchatach.g.cs
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\MainWindow.g.cs
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\ytilites.g.cs
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\App.g.cs
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro_MarkupCompile.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro_MarkupCompile.lref
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Avtor.baml
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\dispitherchatach.baml
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\MainWindow.baml
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\ytilites.baml
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.g.resources
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.Properties.Resources.resources
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\CclearPro.csproj.GenerateResource.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\CclearPro.csproj.CoreCompileInputs.cache
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\CclearPro.csproj.CopyComplete
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.exe
+C:\Users\Дамир\Documents\GitHub\Cclearpro-Clearing\Cclearpro - Clearing\obj\Debug\Cclearpro.pdb
