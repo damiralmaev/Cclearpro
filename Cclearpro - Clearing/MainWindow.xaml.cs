@@ -55,7 +55,7 @@ namespace CclearPro
 
         //Инфа
 
-        public string Version = "2.0";//версия
+        public string Version = "2.1";//версия
 
         //разное
 
@@ -692,7 +692,7 @@ namespace CclearPro
 
         private void Btupdate_Click(object sender, RoutedEventArgs e)//Обновление
         {
-            Uri l = new Uri("https://raw.githubusercontent.com/damiralmaev/Cclearpro/master/Cclearpro%20-%20Clearing/bin/Debug/Cclearpro.exe");
+            Uri l = new Uri("https://raw.githubusercontent.com/damiralmaev/Cclearpro/master/Update/Cclearpro.exe");
             try
             {
                 string var = "";
@@ -713,6 +713,11 @@ namespace CclearPro
                 }
             }
             catch (Exception ex) { MessageBox.Show($"Ошибка сети: {ex.Message}", "Cclearpro", MessageBoxButton.OK, MessageBoxImage.Error); }
+        }
+
+        private void Btsite_Click(object sender, RoutedEventArgs e)//сайт
+        {
+            Process.Start("https://damiralmaev.github.io/");
         }
     }
 }

@@ -32,5 +32,6 @@
         <Label Content="И интернет мусор" HorizontalAlignment="Left" Margin="494,273,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btupdate" Content="Обновление" FontSize="17" HorizontalAlignment="Left" Height="28" Margin="694,141,0,0" VerticalAlignment="Top" Width="104" Click="Btupdate_Click"/>
         <CheckBox x:Name="CheckDown" Content="Очистить загрузки" HorizontalAlignment="Left" Margin="187,77,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="btsite" Content="Наш сайт" FontSize="17" HorizontalAlignment="Left" Height="28" Margin="694,173,0,0" VerticalAlignment="Top" Width="104" Click="Btsite_Click"/>
     </Grid>
 </Window>
