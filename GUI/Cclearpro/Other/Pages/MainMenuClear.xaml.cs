@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Threading;
-using Cclearpro.Other.Pages;
-using Cclearpro.Other.Class;
 
-namespace Cclearpro
+namespace Cclearpro.Other.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainMenuClear.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainMenuClear : Page
     {
-        object page = null;//Страница
-
-        public MainWindow()
+        public MainMenuClear()
         {
             InitializeComponent();
-            page = new MainMenuClear();
-            frame.Navigate(page);
         }
     }
 }

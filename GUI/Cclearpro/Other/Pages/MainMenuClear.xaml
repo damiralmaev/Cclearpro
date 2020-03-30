@@ -1,0 +1,20 @@
+﻿<Page x:Class="Cclearpro.Other.Pages.MainMenuClear"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cclearpro.Other.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="335" d:DesignWidth="792"
+      Title="MainMenuClear">
+
+    <Grid>
+        <Label Content="Добро пожаловать в Cclearpro!" FontSize="50" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="169" Margin="32,97,0,0" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Очистка" FontSize="30" HorizontalAlignment="Left" Margin="54,271,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="169" Margin="311,97,0,0" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Реестр" FontSize="30" HorizontalAlignment="Left" Margin="343,271,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="169" Margin="603,97,0,0" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Опцимизация" FontSize="30" HorizontalAlignment="Left" Margin="585,271,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

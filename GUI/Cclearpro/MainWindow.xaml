@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cclearpro"
         mc:Ignorable="d"
-        Title="Cclearpro: Главное меню" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Height="450" Width="800">
+        Title="Cclearpro: Главное меню" ResizeMode="NoResize" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Height="450" Width="800">
     <Grid>
         <Frame x:Name="frame" Content="" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="335" Margin="0,88,0,0" VerticalAlignment="Top" Width="792"/>
+        <Grid HorizontalAlignment="Left" Height="83" VerticalAlignment="Top" Width="794" Background="#FF1DAFBD"/>
 
     </Grid>
 </Window>
