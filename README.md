@@ -7,7 +7,7 @@
                                               | |              
                                               |_|              
 
-***Cclearpro***
+`Cclearpro`
 
 # Описание
 
@@ -23,4 +23,8 @@
 
 2. Доступ в `интернет` ***(для обновлений)***
 
-3. `.Net` Framework 4.7.2
+3. `.Net` Framework 4.8
+
+# Автор
+
+![](https://i.ibb.co/MPNCfRY/Oz-Why-JWm-M8.jpgi)

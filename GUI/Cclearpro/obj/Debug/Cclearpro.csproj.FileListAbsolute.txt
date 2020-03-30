@@ -1,0 +1,15 @@
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\bin\Debug\Cclearpro.exe.config
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\bin\Debug\Cclearpro.exe
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\bin\Debug\Cclearpro.pdb
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.csprojAssemblyReference.cache
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\MainWindow.g.cs
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\App.g.cs
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro_MarkupCompile.cache
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro_MarkupCompile.lref
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\MainWindow.baml
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.g.resources
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.Properties.Resources.resources
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.csproj.GenerateResource.cache
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.csproj.CoreCompileInputs.cache
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.exe
+C:\Users\damal\source\repos\Cclearpro\Cclearpro\obj\Debug\Cclearpro.pdb
