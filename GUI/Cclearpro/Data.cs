@@ -12,13 +12,27 @@ namespace Cclearpro
 
         public const string VER = "3.0";//Версия программы
 
+        public enum TypeCheckUpdate//Тип проверки обновлений
+        {
+            Normal = 0,//Нормальные
+            Custom = 1//Пользовательские
+        }
+
+        public struct SettingsCheckUpdate//Настройки для обновлений
+        {
+            public string URLFILE;//Ссылка на саму программу
+            public string URLVER;//Для проверки версии
+        }
+
         //Данные
 
         /*Ссылка для обновление проги*/
 
-        static public string CheckUpdate { get; set; }
+        //Стартард
+
+        public const string CheckUpdate
             = "https://raw.githubusercontent.com/damiralmaev/Cclearpro/release-3.0/Other/Update/Windows/ver.txt";//txt для проверки
-        static public string CheckUpdateFile { get; set; }
+        public const string CheckUpdateFile
             = "https://raw.githubusercontent.com/damiralmaev/Cclearpro/release-3.0/Other/Update/Windows/Cclearpro.rar";//Сам наш файл
 
         /*Ссылка для обновление проги*/

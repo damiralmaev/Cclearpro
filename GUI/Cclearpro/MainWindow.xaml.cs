@@ -40,7 +40,7 @@ namespace Cclearpro
 
                     if (result == MessageBoxResult.Yes)
                     {
-                        //TODO
+                        //TODO: Добавить форму
                     }
                 }
             }
