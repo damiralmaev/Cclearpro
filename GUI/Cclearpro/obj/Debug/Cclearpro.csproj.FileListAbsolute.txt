@@ -30,3 +30,7 @@ C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\obj\Debug\Cclearpro.cspr
 C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\obj\Debug\Cclearpro.csproj.CoreCompileInputs.cache
 C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\obj\Debug\Cclearpro.exe
 C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\obj\Debug\Cclearpro.pdb
+C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\bin\Debug\SharpCompress.dll
+C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\damal\Documents\GitHub\Cclearpro\GUI\Cclearpro\obj\Debug\Cclearpro.csproj.CopyComplete

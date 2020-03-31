@@ -16,7 +16,13 @@ namespace Cclearpro
 
         /*Ссылка для обновление проги*/
 
-        static public string CheckUpdate { get; set; } = "";//txt для проверки
-        static public string CheckUpdateFile { get; set; } = "";//Сам наш файл
+        static public string CheckUpdate { get; set; }
+            = "https://raw.githubusercontent.com/damiralmaev/Cclearpro/release-3.0/Other/Update/Windows/ver.txt";//txt для проверки
+        static public string CheckUpdateFile { get; set; }
+            = "https://raw.githubusercontent.com/damiralmaev/Cclearpro/release-3.0/Other/Update/Windows/Cclearpro.rar";//Сам наш файл
+
+        /*Ссылка для обновление проги*/
+
+        static public object Settings { get; set; }//Для класса Settngs
     }
 }

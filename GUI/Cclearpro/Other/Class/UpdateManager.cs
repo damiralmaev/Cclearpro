@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using System.IO;
+using SharpCompress;
+using SharpCompress.Archives.Rar;
+using SharpCompress.Archives;
 
 namespace Cclearpro.Other.Class
 {
@@ -11,7 +15,7 @@ namespace Cclearpro.Other.Class
     {
         private string PathFile { get; set; }
 
-        public UpdateManager(string pathFile = "UpdateCclearpro") => PathFile = pathFile;
+        public UpdateManager(string pathFile = "UpdateCclearpro.rar") => PathFile = pathFile;
 
         public bool Check()//Есть обновление?
         {
@@ -19,7 +23,7 @@ namespace Cclearpro.Other.Class
             {
                 string ver = web.DownloadString(Data.CheckUpdate);
 
-                if (ver == Data.CheckUpdate)
+                if (ver == Data.VER)
                     goto link1;
                 else
                     goto link2;
@@ -38,6 +42,19 @@ namespace Cclearpro.Other.Class
 
             await web.DownloadDataTaskAsync(Data.CheckUpdateFile);
             //web.Proxy Потом сделаю прокси!
+            //TODO: Проверит архив
+            using (var archive = RarArchive.Open(PathFile))
+            {
+                foreach (var en in archive.Entries.Where(en => !en.IsDirectory))
+                {
+                    en.WriteToDirectory("", new SharpCompress.Common.ExtractionOptions()
+                    {
+                        ExtractFullPath = true,
+                        Overwrite = true
+                    });
+                }
+            
+            }
         }
     }
 }

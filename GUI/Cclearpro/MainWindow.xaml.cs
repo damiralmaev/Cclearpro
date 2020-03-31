@@ -23,13 +23,43 @@ namespace Cclearpro
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Прочее
         object page = null;//Страница
 
+        private void CheckUpdate()
+        {
+            try
+            {
+                UpdateManager updatemng = new UpdateManager();
+
+                if (updatemng.Check())
+                {
+                    MessageBoxResult result =
+                        MessageBox.Show("Найдено новое обновление! Обновить?", "Cclearpro: Главное меню",
+                        MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        //TODO
+                    }
+                }
+            }
+            catch { }
+        }
+        
+        //Основное
         public MainWindow()
         {
             InitializeComponent();
+
+            //Загрузка страницы
             page = new MainMenuClear();
             frame.Navigate(page);
+
+            //Поток для update
+            Thread thread = new Thread(new ThreadStart(CheckUpdate));
+            thread.IsBackground = true;
+            thread.Start();
         }
     }
 }
