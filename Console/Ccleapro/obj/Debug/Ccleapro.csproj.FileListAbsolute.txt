@@ -1,0 +1,9 @@
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\bin\Debug\Ccleapro.exe.config
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\bin\Debug\Ccleapro.exe
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\bin\Debug\Ccleapro.pdb
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\bin\Debug\Goblinfactory.Konsole.dll
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\obj\Debug\Ccleapro.csprojAssemblyReference.cache
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\obj\Debug\Ccleapro.csproj.CoreCompileInputs.cache
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\obj\Debug\Ccleapro.csproj.CopyComplete
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\obj\Debug\Ccleapro.exe
+C:\Users\damal\source\repos\Ccleapro\Ccleapro\obj\Debug\Ccleapro.pdb
